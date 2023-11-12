@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="JavaScript/script.js" defer></script>
-    <link rel="stylesheet" href="Style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calc</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
 </head>
     <body>
-        <div id="quadrado">
-            <P id="calculadora--palavra">Calculadora</P>
-            <p id="resultado"></p>
+      <div>
+        <p class="p">Codigo para adição = 1</p>
+        <p class="p">Codigo para subtração = 2</p>
+        <p class="p">Codigo para multiplicação = 3</p>
+        <p class="p">Codigo para divisão = 4</p>
+      </div>
+
+      <div id="quadrado"></div>
+        <div id="inputs">
+          Primeiro numero: <input id="perguntas1" type="number"  /><br />
+          Codigo do sinal: <input id="codigo" type="number"  /><br />
+          Segundo numero: <input id="perguntas3" type="number" /><br />
+          <button onclick="adicionar()" class="calc" id="calcular" type="submit" value="Calcular"><span id="bonito">Calcular</span></button>
         </div>
-        <div>
-            <li id="botoes">
-                <button id="botao-escuro" class="botao" onclick="clean()">CE</button>
-                <button id="botao-escuro" class="botao" onclick="back()">C</button>
-                <button id="botao-escuro" class="botao">DEL</button>
-                <button id="botao-escuro" class="botao" onclick="insert('/')">/</button>
-                <button class="botao" onclick="insert('7')">7</button>
-                <button class="botao" onclick="insert('8')">8</button>
-                <button class="botao" onclick="insert('9')">9</button>
-                <button id="botao-escuro" class="botao" onclick="insert('*')">*</button>
-                <button class="botao" onclick="insert('4')">4</button>
-                <button class="botao" onclick="insert('5')">5</button>
-                <button class="botao" onclick="insert('6')">6</button>
-                <button id="botao-escuro" class="botao" onclick="insert('-')">-</button>
-                <button class="botao" onclick="insert('1')">1</button>
-                <button class="botao" onclick="insert('2')">2</button>
-                <button class="botao" onclick="insert('3')">3</button>
-                <button id="botao-escuro" class="botao" onclick="insert('+')">+</button>
-                <button class="botao" onclick="insert('0')">0</button>
-                <button class="botao" onclick="insert('.')">.</button>
-                <button id="igual" onclick="calcular()">=</button>
-            </li>
-        </div>
+        <p id="resultado"></p>
     </body>
 </html>
