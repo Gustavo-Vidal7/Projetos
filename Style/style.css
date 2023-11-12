@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&display=swap');
+
+:root {
+    --fonte-padrao: 'Mukta', sans-serif;
+}
+
+body {
+    background-color: #808080;
+}
+#quadrado {
+    border: 1px solid;
+    background-color: #bdbebd;
+    height: 565px;
+    width: 415px;
+    margin: auto;
+    border-radius: 11px;
+    border-color: blue;
+}
+#botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: -25.5em;
+    gap: 4px;
+    border: none;
+}
+.botao {
+    font-family: var(--fonte-padrao);
+    font-weight: 300;
+    font-size: 26px;
+    border: none;
+}
+#igual {
+    font-family: var(--fonte-padrao);
+    font-weight: 300;
+    font-size: 25px;
+    border: none;
+    background-color: #88ade7;
+    grid-column: span 2;
+}
+#botao-escuro {
+    background-color: #dddddd;
+}
+#resultado {
+    text-align: end;
+    margin-top: 1.7em;
+    margin-right: 0.3em;
+    font-size: 35px;
+    font-family: var(--fonte-padrao);
+    color: whitesmoke;
+    font-weight: 500;
+}
+#calculadora--palavra {
+    font-size: 15px;
+    margin-top: -2px;
+    margin-left: 3px;
+    font-family: var(--fonte-padrao);
+    color: whitesmoke;
+    font-weight: 500;
+}

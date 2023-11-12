@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JavaScript/script.js" defer></script>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+    <body>
+        <div id="quadrado">
+            <P id="calculadora--palavra">Calculadora</P>
+            <p id="resultado"></p>
+        </div>
+        <div>
+            <li id="botoes">
+                <button id="botao-escuro" class="botao" onclick="clean()">CE</button>
+                <button id="botao-escuro" class="botao" onclick="back()">C</button>
+                <button id="botao-escuro" class="botao">DEL</button>
+                <button id="botao-escuro" class="botao" onclick="insert('/')">/</button>
+                <button class="botao" onclick="insert('7')">7</button>
+                <button class="botao" onclick="insert('8')">8</button>
+                <button class="botao" onclick="insert('9')">9</button>
+                <button id="botao-escuro" class="botao" onclick="insert('*')">*</button>
+                <button class="botao" onclick="insert('4')">4</button>
+                <button class="botao" onclick="insert('5')">5</button>
+                <button class="botao" onclick="insert('6')">6</button>
+                <button id="botao-escuro" class="botao" onclick="insert('-')">-</button>
+                <button class="botao" onclick="insert('1')">1</button>
+                <button class="botao" onclick="insert('2')">2</button>
+                <button class="botao" onclick="insert('3')">3</button>
+                <button id="botao-escuro" class="botao" onclick="insert('+')">+</button>
+                <button class="botao" onclick="insert('0')">0</button>
+                <button class="botao" onclick="insert('.')">.</button>
+                <button id="igual" onclick="calcular()">=</button>
+            </li>
+        </div>
+    </body>
+</html>
